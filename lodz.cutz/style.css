@@ -1,22 +1,37 @@
-/* Estilos generales para dispositivos móviles */
+/* Estilos específicos para dispositivos móviles */
 @media (max-width: 600px) {
-    body {
-        font-size: 16px; /* Ajusta el tamaño de fuente base para dispositivos móviles */
-    }
-
-    /* Estilos específicos para la barra de navegación en dispositivos móviles */
+    /* Estilo para fijar el menú en la parte superior */
     nav {
-        flex-direction: column; /* Cambia la dirección de los elementos en la barra de navegación */
-        align-items: center; /* Centra los elementos en la barra de navegación */
-        text-align: center; /* Centra el texto en la barra de navegación */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #1d4ed8; /* Color de fondo del menú */
+        z-index: 9999; /* Asegura que el menú esté por encima de otros elementos */
     }
 
-    /* Agrega más reglas CSS específicas para dispositivos móviles aquí */
-}
+    /* Alinea el texto del menú en el centro y ajusta el espaciado */
+    nav ul {
+        text-align: center;
+        padding: 1rem;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
 
-/* Estilos generales para tabletas */
-@media (max-width: 900px) {
-    /* Agrega estilos específicos para tabletas aquí */
+    /* Estiliza los elementos del menú */
+    nav li {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+    }
 }
 
 * {
