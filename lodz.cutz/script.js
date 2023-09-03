@@ -13,22 +13,29 @@ const link2 = document.getElementById("link2");
 const link3 = document.getElementById("link3");
 const link4 = document.getElementById("link4");
 
-link1.addEventListener('click', () => {
+if (link1 !== null) {
+  link1.addEventListener('click', () => {
     scrollToElement('.header');
 });
+}
 
+if (link1 !== null) {
 link2.addEventListener('click', () => {
-    // Scroll to the second element with "header" class
     scrollToElement('.header', 1);
 });
+}
 
+if (link1 !== null) {
 link3.addEventListener('click', () => {
     scrollToElement('.header', 2);
 });
+}
 
+if (link1 !== null) {
 link4.addEventListener('click', () => {
   scrollToElement('.header', 3);
 });
+}
 
 document.addEventListener("DOMContentLoaded", function() {
     const submitButton = document.getElementById("submit");
