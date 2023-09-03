@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlace a la hoja de estilo CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Reservas - Lodz CutzZ</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-logo">
+            <a>
+                <img src="images/logo2.png" class="rounded-image">
+              <!-- Aqui Jorge -->
+            </a>
+        </div>
+
+        <ul class="nav-links">
+            <li class="link"><a href="index.html">Home</a></li>
+        </ul>
+        <a href="reservas.html" class="btn">Reservar</a>
+    </nav>
+
+    <section class="container">
+        <h2 class="header">HAZ TU RESERVA MANDRIL</h2>
+        <div class="booking-form">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" required>
+            <label for="instagram">Perfil de Instagram:</label>
+            <input type="text" id="instagram" required>
+            <label for="booking-date">Fecha de reserva:</label>
+            <input type="date" id="booking-date" required>
+            <label for="start-time">Hora de inicio:</label>
+            <input type="time" id="start-time" required>
+            <!-- Eliminamos la etiqueta de "Hora de finalización" -->
+            <button id="submit">Reservar</button>
+        </div>
+        <div class="bookings">
+            <h2>RESERVAS EXISTENTES</h2>
+            <ul id="booking-list">
+                <!-- Las reservas almacenadas se cargarán aquí -->
+            </ul>
+        </div>
+    </section>
+    <footer class="container">
+        <span class="blur"></span>
+        <span class="blur"></span>
+        <div class="column">
+            <div class="logo">
+                <img src="images/poland.png">
+                <img src="images/spain.png">
+            </div>
+            <p>
+                Reserva tu corte y disfruta de la experiencia. ¡Si vienes sales con novia!
+            </p>      
+        </div>
+        <div class="column">
+            <h4>Clientes satisfechos</h4>
+            <a>Familia</a>
+            <a>Amigos</a>
+        </div>
+        <div class="column">
+            <h4>Acerca de nosotros</h4>
+            <a>Paletos</a>
+            <a>Padeleros</a>
+        </div>
+        <div class="column">
+            <h4>Contacto</h4>
+            <a href="https://www.instagram.com/lodz.cutzz/">Contáctanos por MD</a>
+            <a>Política de privacidad no hay</a>
+            <a>Términos y condiciones (no sé qué es eso)</a>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        Derechos de autor © 2023 Página de Reservas de lodz.cutzZ. Todos los derechos reservados.
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
